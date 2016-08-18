@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+#contents .eq-info {
+	padding: 15px 0 13px;
+	margin: 0px auto 23px auto;
+	width: 960px;
+	text-align:center;
+	line-height:250%;
+	background-color: #f4f4f4;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+#contents .eq-info p {
+	font-size: 16px;
+}
+#contents .eq-info .title {
+	font-size: 18px;
+	font-weight: bold;
+	color: red;
+}
+
+/*  Top Contents
+-----------------------------------------------------------------------------*/
+#main_top {
+	background: #f4f4f4;
+	padding: 25px 0 23px;
+	position:relative;
+	overflow: hidden;
+}
+
+#main_top .bx-wrapper .bx-viewport {
+	overflow: visible!important;
+}
+
+#main_top #slider_top {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/*#main_top #slider_top ul li {
+	margin: 0 10px;
+}*/
+
+#main .button_list {
+	margin: 0 -30px 17px 0;
+}
+
+#main .button_list li {
+	float: left;
+	margin-right: 25px;
+}
+
+#main .block {
+	padding-bottom: 24px;
+}
+
+#main .block a {
+	color: #2d2d2d;
+}
+
+#main .block .block_left {
+	background: #83e039 url(../../img/home/bottom_bg01.jpg) no-repeat left bottom;
+	float: left;
+	margin-left: 1px;
+	width: 330px;
+}
+
+#main .block .block_left .block_inner {
+	background: url(../../img/home/top_bg01.jpg) no-repeat left top;
+	padding: 25px 56px 21px;
+}
+
+#main .block .sub_title {
+	padding-bottom: 8px;
+}
+
+#main .block p {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+#main .block .block_right {
+	background: #ff8e01 url(../../img/home/bottom_bg02.jpg) no-repeat left bottom;
+	float: right;
+	position: relative;
+	width: 330px;
+}
+
+#main .block .block_right .block_inner {
+	background: url(../../img/home/top_bg02.jpg) no-repeat left top;
+	padding: 24px 72px 20px;
+}
+
+#main .block .block_right .image {
+	position: absolute;
+	top: 15px;
+	left: -1px;
+	padding: 0!important;
+}
+
+#main .block .block_right .block_inner p {
+	padding: 2px 0 0 8px;
+}
+
+#main .box_slider {
+	background: #f2f4f3;
+	margin: 8px 0 0;
+}
+
+#main .box_slider ul li .hyaku_box {
+	float: left;
+	padding: 16px 0 0 41px;
+	width: 270px;
+}
+
+#main .box_slider ul li a.linkbox {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#main .box_slider ul li.hyaku_big .hyaku_box {
+	padding: 8px 0 0 41px;
+}
+
+#main .box_slider ul li .hyaku_box p a {
+	color: #2d2d2d;
+	text-decoration: underline;
+}
+
+#main .box_slider ul li .hyaku_box p a:hover {
+	text-decoration: none;
+}
+
+#main .box_slider ul li .hyaku_box p span {
+	display: block;
+}
+
+#main .box_slider ul li .hyaku_box p .fr {
+	text-align: right;
+	width: 152px;
+}
+
+#main .box_slider ul li .image {
+	float: right;
+	width: 343px;
+}
+
+#main .box_book {
+	margin: 19px 0 37px;
+	position: relative;
+}
+
+#main .box_book a {
+	color: #2d2d2d;
+}
+
+#main .box_book span {
+	display: block;
+	position: absolute;
+	left: 45px;
+	bottom: 19px;
+	font-size: 13px;
+	line-height: 23px;
+}
+
+#main .special_news {
+	padding: 20px 0 0 25px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #ff8f00;
+}
+
+#main .news_list {
+	padding: 0 0 0 26px;
+}
+
+#main .news_list dt {
+	background: url(../../img/common/arrow_icon01.jpg) no-repeat 0 2px;
+	font-size: 14px;
+	margin-top: 19px;
+	padding: 0 0 0 20px;
+}
+
+#main .news_list dd {
+	margin: -17px 0 0 0;
+	padding-left: 137px;
+	line-height: 1.5;
+}

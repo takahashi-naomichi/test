@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+/*  Layout
+-----------------------------------------------------------------------------*/
+/* Body */
+body {
+	background: #fff;
+	color: #2D2D2D;
+	font-family: 'メイリオ', Meiryo, " ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+	*line-height: 1.4;
+	margin: 0;
+}
+
+/* Header */
+#header #header_inner {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#header #header_inner .left {
+	float: left;
+	width: 453px;
+}
+
+#header #header_inner .left div {
+	padding: 20px 0 18px;
+}
+
+#header #header_inner .left div p {
+	float: left;
+	padding-top: 27px;
+}
+
+#header #header_inner .left div ul {
+	float: right;
+	width: 248px;
+}
+
+#header #header_inner .left div ul li {
+	float: left;
+	margin: 8px 8px 0 0;
+}
+
+#header #header_inner .right {
+	float: right;
+	padding-top: 52px;
+	position: relative;
+	width: 412px;
+}
+
+#header #header_inner #logo {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#header #header_inner .h_navi {
+	padding: 10px 0 11px;
+}
+
+#header #header_inner .h_navi li {
+	float: left;
+}
+
+#g_navi {
+	background: url(../../img/common/gnavi_bg.png) repeat-x left top;
+	margin-top: 14px;
+}
+
+#g_navi ul {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#g_navi ul li {
+	float: left;
+	z-index: 300;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#g_navi ul li ul {
+	margin: 0;
+	width: 170px;
+	position: absolute;
+	left: 0;
+	top: 64px;
+	background-color: #fff;
+	display: none;
+	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+    padding: 5px 0 0 0;
+}
+#g_navi ul li ul#gnavi1 { width: 163px; }
+#g_navi ul li ul#gnavi2 { width: 197px; }
+#g_navi ul li ul#gnavi3 { width: 149px; }
+#g_navi ul li ul#gnavi5 { width: 190px; }
+#g_navi ul li ul li {
+	float: none;
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 0 0 16px 15px;
+}
+#g_navi ul li ul li a {
+	color: #000;
+}
+
+/* Footer */
+#footer {
+	margin: 0 auto;
+	width: 960px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+#footer #pagetop {
+	position: absolute;
+	top: -26px;
+	right: 4px;
+}
+
+#footer .f_navi li {
+	float: left;
+	font-size: 11px;
+	margin-right: 19px;
+}
+
+#footer .f_navi li a {
+	color: #2d2d2d;
+}
+
+#footer .f_navi li a:hover {
+	color: #7DCCF3;
+}
+
+#footer .box_link {
+	background: url(../../img/common/line_bg01.gif) repeat-x left top;
+	margin: 16px 0 0;
+	padding: 26px 0 0 0;
+}
+
+#footer .box_link ul {
+	text-align: center;
+}
+
+#footer .box_link ul li {
+	display: inline-block;
+	*display: inline;
+}
+
+#footer .box_link ul li a {
+	color: #2d2d2d;
+	background: #f4f4f4;
+	font-size: 11px;
+	display: inline-block;
+	padding: 8px 18px 7px;
+	text-align: center;
+}
+
+#footer .box_link ul li a:hover {
+	background: #f8fcfe;
+	color: #7DCCF3;
+}
+
+#footer #copyright {
+	font-size: 10px;
+	text-align: right;
+}
+
+/* Contents */
+#contents {
+	padding: 26px 0 110px;
+	margin: 0 auto;
+	width: 960px;
+}
+
+#contents #main {
+	float: left;
+	width: 684px;
+}
+
+#contents #sidebar {
+	float: right;
+	width: 250px;
+}
+
+#contents #sidebar .box_search {
+	background: #7dccf3 url(../../img/common/bottom_bg01.jpg) no-repeat left bottom;
+	width: 250px;
+	margin-bottom: 1px;
+	position: relative;
+	padding-bottom: 15px;
+}
+
+#contents #sidebar .box_search .box_inner {
+	background: url(../../img/common/top_bg01.jpg) no-repeat left top;
+	padding: 14px 17px 10px;
+}
+
+#contents #sidebar .box_search p {
+	color: #fff;
+}
+
+#contents #sidebar .box_search .title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #2D2D2D;
+	padding: 10px 0 1px;
+}
+
+#contents #sidebar .box_search .keyword {
+	border: 1px solid #a19fa0;
+	height: 23px;
+	width: 157px;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+
+#contents #sidebar .box_search .btn_submit {
+	margin: 0 0 0 -6px;
+	vertical-align: middle;
+}
+
+#contents #sidebar .box_map {
+	background: url(../../img/common/img_map.png) no-repeat left top;
+	height: 103px;
+	width: 133px;
+	margin: -20px 0 5px 43px;
+}
+
+#contents #sidebar .banner_list li {
+	padding-top: 17px;
+	position: relative;
+}
+
+#contents #sidebar .banner_list li span {
+	color: #2D2D2D;
+	font-size: 10px;
+	line-height: 15px;
+	*line-height: 1.5;
+	position: absolute;
+	right: 9px;
+	bottom: 19px;
+	width: 120px;
+}
+
+#contents #sidebar .banner_list li a:hover {
+	color: #2d2d2d;
+	text-decoration: none;
+}
+
+#contents #sidebar .banner_list li .text {
+	right: 2px;
+	bottom: 17px;
+	width: 135px;
+}
+
+#contents #sidebar .box_contact {
+	background: url(../../img/common/bottom_bg02.gif) no-repeat left bottom;
+	margin-top: 18px;
+	width: 250px;
+}
+
+#contents #sidebar .box_contact .box_inner {
+	padding: 15px 13px;
+}
+
+#contents #sidebar .box_contact ul li {
+	padding-bottom: 15px;
+}
+
+#contents #sidebar .box_contact ul li span {
+	font-size: 15px;
+	display: block;
+	padding: 9px 0 0 50px;
+}
+
+#contents #sidebar .box_contact p {
+	margin-top: -2px;
+}
+
+#contents #sidebar .box_exbanner li {
+	margin-top: 15px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#contents #sidebar .box_exbanner li a {
+	position: absolute;
+	top: 19ox;
+	left: 0;
+	width: 250px;
+	height: 169px;
+	color: #000;
+}
+#contents #sidebar .box_exbanner li a:hover {
+	text-decoration: none;
+}
+#contents #sidebar .box_exbanner li.ex_album {
+	background: url(../../img/common/bg_sidebanner1.png) no-repeat top left;
+	width: 250px;
+	height: 136px;
+}
+#contents #sidebar .box_exbanner li.ex_album div {
+	text-align: center;	
+	padding: 65px 0 0 15px;
+}
+#contents #sidebar .box_exbanner li.ex_nintei {
+	background: url(../../img/common/bg_sidebanner2.png) no-repeat top left;
+	width: 250px;
+	height: 136px;
+}
+#contents #sidebar .box_exbanner li.ex_nintei div {
+	text-align: center;	
+	padding: 87px 0 0 25px;
+}
+
+
+#tool_bar {
+	position: fixed;
+	right: 0;
+	top: 20px;
+	z-index: 400;
+}
+
+#tool_bar .box_item, #tool_bar .box_item2 {
+	margin-bottom: 10px;
+}
+
+#tool_bar .box_item {
+	position: relative;
+}
+
+#tool_bar .box_item:hover {
+	right: 50px;
+} 
+
+#tool_bar .box_item:hover .box_show {
+	display: block;
+}
+
+#tool_bar .box_item .box_show {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

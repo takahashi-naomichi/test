@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# Reset 'Browser standard style'
+
+----------------------------------------*/
+
+
+/* # Reset 'Browser standard style'
+---------------------------------------------------------------------------- */
+body,
+h1,h2,h3,h4,h5,h6,
+p,ul,ol,dl,dt,dd,li,table,th,td,
+form,address,pre,caption,cite,code,dfn,var {
+	font-size: 100%;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+img { 
+	border: 0; 
+	vertical-align: bottom;
+}
+
+table { 
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th { text-align: left; }
+
+ol, ul { list-style: none; }
+
+a { outline: none; }
+:focus { -moz-outline-style: none; }

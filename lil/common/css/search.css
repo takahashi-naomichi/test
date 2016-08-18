@@ -1,0 +1,280 @@
+/* 検索結果 ----------------------------------- */
+
+/* 見出し */
+
+#main #searchBox h2.title {
+	color: #333333;
+	background: #f1fafe;
+	margin: 20px 0 10px;
+	padding: 3px 5px;
+	border: 2px solid #aadef8;
+	font-size: 133.5%;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+#main #searchBox h2.title span {
+	margin-top: 0.2em;
+	width: 560px;
+	display: block;
+	float: left;
+}
+
+/* 住所一覧 */
+
+#main #searchBox {
+	background: url(../../img/search/bg_upper.gif) no-repeat;
+	margin-top: 10px;
+	padding-top: 13px;
+}
+
+#main #searchBox div.inner {
+	background: url(../../img/search/bg_lower.gif) no-repeat 0 100%;
+	padding: 0 15px 13px;
+}
+
+#main #searchBox h2.title {
+	margin: 0 0 10px;
+}
+
+#main #searchBox p.s {
+	margin-top: 10px;
+	font-size: 91.75%;
+	line-height: 130%;
+}
+
+#main div.searchNavi p.update {
+	margin-top: 10px;
+	border-bottom: 1px dashed #CCCCCC;
+	font-size: 116.75%;
+	line-height: 180%;
+}
+
+#main p.searchPrev {
+	margin-top: 8px;
+	line-height: 100%;
+}
+
+#main p.searchPrev {
+	margin-top: 8px;
+	line-height: 100%;
+}
+
+#main div.searchNavi_upper p.searchPrev {
+	margin-bottom: 20px;
+}
+
+/*-- TABLE prefectureList --*/
+
+#main #searchBox table.prefectureList {
+	border-top: 1px dashed #CCCCCC;
+	font-weight: bold;
+}
+
+#main #searchBox table.prefectureList th {
+	border-bottom: 1px dashed #CCCCCC;
+	font-size: 133.5%;
+	text-align: center;
+}
+
+#main #searchBox table.prefectureList td {
+	border-bottom: 1px dashed #CCCCCC;
+	font-weight: bold;
+	font-size: 116.75%;
+	padding: 5px;
+}
+
+#main #searchBox table.prefectureList td span.s {
+	font-weight: normal;
+	font-size: 85.75%;
+}
+
+#main #searchBox table.prefectureList tr.even td, #main #searchBox table.prefectureList tr.even th {
+	background: #f1fafe;
+}
+
+
+/* 周辺の教室検索結果一覧 --------------------- */
+#main #classroomBox ul.row,
+#main #classroomBox dl.row {
+	display: inline-block;
+}
+
+#main #classroomBox ul.row,
+#main #classroomBox dl.row {
+	/* \*/
+	display: block;
+	/*  */
+}
+
+#main #classroomBox ul.row:after,
+#main #classroomBox dl.row:after {
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	content: ".";
+}
+
+#main #classroomBox ul.row li,
+#main #classroomBox dl.row dt,
+#main #classroomBox dl.row dd {
+	width: auto;
+	float: left;
+	/* for Windows Internet Explorer 5.5 */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	white-space: nowrap;
+}
+
+/* classroomBox */
+
+#main #classroomBox {
+	margin-top: 10px;
+}
+
+/* 周辺地図 */
+
+#main #classroomMap {
+	float: left;
+}
+
+/* 絞り込み検索 */
+
+#main #conditionBox {
+	background: url(../../img/search/bg_condition_upper.gif) no-repeat;
+	padding-top: 13px;
+	width: 255px;
+	float: right;
+	margin-bottom: 20px;
+}
+
+#main #conditionBox div.inner {
+	background: url(../../img/search/bg_condition_lower.gif) no-repeat 0 100%;
+	padding: 0 15px 13px;
+	width: 225px;
+}
+
+#main #conditionBox dl {
+	background: url(../../img/search/dot_lin.gif) no-repeat 0 100%;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+#main #conditionBox dl dd {
+	margin-top: 5px;
+	line-height: 130%;
+}
+
+#main #conditionBox label {
+	margin: 0 1em 0 5px;
+}
+
+#main #conditionBox div.courseNote {
+	margin: 10px 0 -3px;
+	line-height: 150%;
+}
+
+#main #conditionBox div.courseNote img {
+	vertical-align: top;
+}
+
+#main #conditionBox dl dd p.s {
+	margin-top: 5px;
+	font-size: 83.5%;
+	line-height: 130%;
+}
+
+#main #resultarea p.s {
+	margin: 10px 0 0;
+	font-size: 91.75%;
+	line-height: 130%;
+}
+
+/* submit */
+
+#main #conditionBox div.submit {
+	margin-top: 15px;
+	text-align: center;
+}
+
+
+/* 周辺の教室検索結果一覧 */
+#main .box_detail table {
+	margin: 10px 0;
+	width: 100%;
+}
+
+#main .box_detail table th {
+	background: #BEE6F7;
+	border: 1px solid #bbb;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#main .box_detail table .size01 {
+	width: 370px;
+}
+
+#main .box_detail table .size02 {
+	width: 114px;
+}
+
+#main .box_detail table .size03 {
+	width: 128px;
+}
+
+#main .box_detail table .size04 {
+	width: 67px;
+}
+
+#main .box_detail table td {
+	border: 1px solid #D9D9D9;
+	padding: 7px 7px;
+}
+
+#main .box_detail table .first {
+	padding: 0;
+}
+
+#main .box_detail table td .title {
+	background: #F9F9F9;
+	border-bottom: 1px dashed #D9D9D9;
+	color: #33A4E7;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#main .box_detail table td p {
+	padding: 5px 10px;
+}
+
+#main .box_detail table td .title span {
+	color: #2d2d2d;
+	font-weight: normal;
+	font-size: 12px;
+	padding-left: 25px;
+}
+
+#main .box_detail table td img {
+	margin: 0 2px 4px 0;
+}
+
+#main .box_detail table td a {
+	font-size: 14px;
+}
+
+#main .box_detail .link {
+	text-align: right;
+	padding-top: 10px;
+}
+
+#main #meeting .nodata {
+	text-align: center;
+	padding: 50px 0;
+}
+#meeting .tab_content .tab_inner div {
+	margin: 0 0 10px 0;
+}

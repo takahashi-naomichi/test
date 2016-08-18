@@ -1,0 +1,536 @@
+<?php
+  $ua = $_SERVER['HTTP_USER_AGENT'];
+  $mobileurl = '/lil/mb/';
+  if (preg_match('/^DoCoMo/', $ua)) {
+    header('Location: ' . $mobileurl);
+  } elseif (preg_match('/^KDDI-|^UP\.Browser/',$ua)) {
+    header('Location: ' . $mobileurl);
+  } elseif (preg_match('#^J-(PHONE|EMULATOR)/|^(Vodafone/|MOT(EMULATOR)?-[CV]|SoftBank/|[VS]emulator/)#', $ua)) {
+    header('Location: ' . $mobileurl);
+  } elseif (preg_match('/(DDIPOCKET|WILLCOM);/', $ua)) {
+    header('Location: ' . $mobileurl);
+  } elseif (preg_match('#^(emobile|Huawei|IAC)/#', $ua)) {
+    header('Location: ' . $mobileurl);
+  }
+
+  $home = true;
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="公文式の考え方を書写の分野に応用した書写教室で、学習者の方により早く、より高い書写力をつけていただくことを目的に、地域の皆さまの書写学習をお手伝いさせていただきたいと考えています。">
+<meta name="keywords" content="公文エルアイエル,公文,公文書写,書写,かきかた,ペン習字,筆ペン,毛筆,くもん,KUMON">
+<title>公文書写 - お子さまから大人の方まで、くもんの書写は、選べる4教科</title>
+<link rel="stylesheet" type="text/css" href="common/css/import.css" media="all" />
+<link rel="stylesheet" type="text/css" href="common/css/jquery.bxslider.css" media="all" />
+<script type="text/javascript"><!--
+function m_win(url,windowname,width,height) {
+ var features="location=no, menubar=no, status=yes, scrollbars=yes, resizable=yes, toolbar=no";
+ if (width) {
+  if (window.screen.width > width)
+   features+=", left="+(window.screen.width-width)/2;
+  else width=window.screen.width;
+  features+=", width="+width;
+ }
+ if (height) {
+  if (window.screen.height > height)
+   features+=", top="+(window.screen.height-height)/2;
+  else height=window.screen.height;
+  features+=", height="+height;
+ }
+ window.open(url,windowname,features);
+}
+// --></script>
+</head>
+
+<body>
+<div id="wrapper">
+  <!-- / id header -->
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/header.html"); ?>
+   <!-- / id header -->
+
+  <div id="main_top"><div id="slider_top">
+        <ul class="bxslider">
+            <li><a href="./taiken/"><img src="img/home/slide-muryo1609.png" alt=""></a></li>
+            <!--li><a href="./search/"><img src="img/home/slide-out-07.png" width="940" height="310" alt="" /></a></li-->
+            <li><img src="img/home/slide_20th.png" width="941" height="311" alt="" /></li>
+            <li><a href="./kumon_shosha/"><img src="img/home/slide-out-01.png" width="941" height="311" alt="" /></a></li>
+            <li><a href="./hyakuhitsu/"><img src="img/home/slide-out-03.png" width="942" height="312" alt="" /></a></li>
+            <li><a href="./taiken/"><img src="img/home/slide-out-09.png" alt=""></a></li>
+
+            <li><a href="./inst/"><img src="img/home/slide-out-04.png" usemap="#ImageMap" width="941" height="311" alt="" /></a><map name="ImageMap">
+                <area shape="circle" coords="807,157,115" href="./inst/meeting.php" alt="" />
+                </map></li>
+            <li><a href="./album/"><img src="img/home/slide-out-06.png" width="941" height="311" alt="" /></a></li>
+
+
+        </ul>
+    </div>
+  </div><!-- / id main_top -->
+
+  <div id="contents" class="clearfix">
+<!-- 熊本地震お見舞い文
+          <div class="block clearfix eq-info">
+              <p class="title">【 特別なお知らせ 】</p>
+              <p>このたびの平成28年熊本地震において、被災された皆さまに心よりお見舞い申し上げます。<br />
+また、亡くなられた方々のご冥福をお祈り申し上げます。</p>
+</div>-->
+
+      <div id="main">
+        <ul class="button_list clearfix">
+            <li><a href="./enter/enter.html"><img src="img/home/btn-out-01.jpg" width="213" height="158" alt="くもん書写とは" /></a></li>
+            <li><a href="./enter/method.html"><img src="img/home/btn-out-02.jpg" width="213" height="158" alt="学習法3つの特長" /></a></li>
+            <li><a href="./enter/faq_q.html"><img src="img/home/btn-out-03.jpg" width="213" height="158" alt="よくあるご質問" /></a></li>
+        </ul>
+        <div class="block clearfix">
+
+            <div class="block_left heightLine-block">
+            <a href="./taiken/" class="linkbox">
+                <div class="block_inner">
+                    <h3 class="sub_title"><img src="img/home/sub_title01.jpg" width="207" height="31" alt="無料体験学習" /></h3>
+                    <p>お近くのくもん書写教室で、<br />
+                    気軽に楽しく書写を体験してみませんか？</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="block_right heightLine-block">
+            <a href="./album/" class="linkbox">
+                <div class="block_inner">
+                    <p class="image"><img src="img/home/img_02.png" width="38" height="128" alt="" /></p>
+                    <h3 class="sub_title"><img src="img/home/sub_title02.jpg" width="205" height="30" alt="上達アルバム" /></h3>
+                    <p>どんどん上達しています！<br />
+学習者さまの素晴らしい<br />
+成果をぜひご覧ください。</p>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div>
+            <h2><img src="img/home/title_01.jpg" width="516" height="31" alt="百人百筆〜私と書写のあるくらし〜" /></h2>
+            <div class="box_slider">
+                <ul class="bxslider">
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt41.png" width="276" height="59" alt="静けさの中で気持ち良く文字を書いている自分がいて、今まで知らなかった感覚を見つけました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写5年</span><span class="fr">Sさん(50代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img41.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt42.png" width="246" height="38" alt="学校の代表に選ばれ、県の硬筆展に出展してもらいました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写1年</span><span class="fr">Tさん(小学2年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img42.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt43.png" width="246" height="59" alt="先生のようにサラサラと美しい文字を書ける、ペン美人になることが私の目標です。
+                                " /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写2年</span><span class="fr">Uさん(60代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img43.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt44.png" width="210" height="60" alt="宿題だって毎週頑張っています。遊びに行くのは宿題を全部終わらせてから。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写4年</span><span class="fr">Oさん(小学2年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img44.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt45.png" width="231" height="37" alt="私にとって書写教室に通うことは、
+日本語の魅力を実感することです。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写8年</span><span class="fr">Oさん(40代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img45.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt40.jpg" width="264" height="43" alt="バスの運転手になるため、
+書写教室で一生懸命字を学習しています。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写3年</span><span class="fr">Oさん(小学4年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img40.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt39.jpg" width="245" height="61" alt="放課後を一人で過ごす娘。少しでも居場所を作ってあげたいと、書写教室に通い始めました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写6年</span><span class="fr">Mさん(40代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img39.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt38.jpg" width="290" height="62" alt="わざとお部屋の一番目立つ場所に表彰状を置いて、パパに「上手に書けたね」と褒めてもらう。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴4年</span>　<span class="fl">Tさん親子(30代)</span><br><span class="fl">書写歴4年</span><span class="fl">（小学3年生）</span> <span class="fl">書写歴3年</span><span class="fl">（小学6年生）</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img38.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt37.jpg" width="185" height="38" alt="書写を習い始めるにあたり、目標を三つ立てました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴7年</span><span class="fr">Iさん(30代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img37.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt36.jpg" width="181" height="59" alt="書写の素晴らしさは、心に安らぎを与えてくれることだと思います。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴6年</span><span class="fr">Kさん(60代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img36.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt31.jpg" width="293" height="60" alt="知らないうちに「コンプレックス」が「自信」に変わり、さらに「好き」になっていました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴10年</span><span class="fr">Uさん(30代 会社員)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img31.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt32.jpg" width="293" height="60" alt="スポーツ選手がオリンピックをめざすように、大きな目標を掲げて努力したい。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴2年</span><span class="fr">Yさん(60代 主婦)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img32.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt33.jpg" width="293" height="60" alt="練習すれば字が上達するし、書くことも楽しいし、一石二鳥だと思います。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴10年</span><span class="fr">Iさん(高校1年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img33.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt34.jpg" width="261" height="42" alt="手で文字を書くと、学習や記憶する力が促されるようです。" /></p>
+                            <p class="clearfix m_t10"><span class="fl m_t10">書写歴2年</span><span class="fr">Tさん親子<br />(40代会社員・小学1年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img34.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt35.jpg" width="293" height="60" alt="先生が歌のようにリズムに乗せて、ポイントを説明してくれるので覚えやすいです。" /></p>
+                            <p class="clearfix m_t10"><span class="fl m_t10">書写歴2年</span><span class="fr">Sさん親子<br />(40代主婦・小学4年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img35.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt26.jpg" width="257" height="42" alt="書くことで自分をアピールできる。「字がきれいな子」って覚えてもらえる。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴13年</span><span class="fr">Sさん(大学生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img26.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt27.jpg" width="215" height="61" alt="「毎日4枚ずつ」が私の日課。気づいたらこの4年半で学習した教材は7,000枚。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴5年</span><span class="fr">Hさん(80代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img27.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt28.jpg" width="282" height="15" alt="憧れは、武田早雲さんと一岡竜司投手です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴5年</span><span class="fr">Kさん(小学4年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img28.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt29.jpg" width="270" height="38" alt="娘がこれからお世話になる方々からの喜びの声、母親としてうれしかったです。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴6年</span><span class="fr">Kさん(50代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img29.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt30.jpg" width="185" height="59" alt="先生と正座で向かい合って「よろしくお願いします」。これが教室のお約束事です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴6年</span><span class="fr">Fさん(小学6年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img30.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt21.jpg" width="293" height="60" alt="ずっと続けてきた年賀状の交換。5年ぶりの再会でも、すごく自然に話ができました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴2年</span><span class="fr">Hさん(小学生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img21.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt22.jpg" width="293" height="60" alt="大学2年生の冬。就職活動をきっかけに、公文書写を始めました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴1年</span><span class="fr">Sさん(大学生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img22.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt23.jpg" width="293" height="60" alt="教室で野球部のマネージャーとして、毎日が忙しい高校生活。でも週に2日の書写教室だけは欠かさず通っています。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴11年</span><span class="fr">Fさん(高校生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img23.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt24.jpg" width="293" height="60" alt="文字のきれいな人は、熱意のある方が多い。文字の美しさは、人柄を伝える大事な要素なのだと実感します。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴3年</span><span class="fr">Sさん(20代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img24.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt25.jpg" width="293" height="60" alt="56歳でトライアスロンに挑戦。68歳で始めたのが、公文書写です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴2年</span><span class="fr">Hさん(70代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img25.jpg" width="342" height="125" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt16.jpg" width="268" height="38" alt="最近では、字を書くことから派生して、読書も好きになってきたようです。" /></p>
+                            <p class="clearfix m_t10"><span class="fl">書写歴11年</span><span class="fr">Jさん(50代 主婦)</span></p>
+                            <p class="clearfix m_t5"><span class="fl">書写歴1年</span><span class="fr">Tさん(幼稚園)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img16.jpg" width="344" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt17.jpg" width="250" height="62" alt="ずっしり重いメダルを手にすると、改めて「入賞したんだ」という喜びが湧いてきました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴5年</span><span class="fr">Yさん(中学生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img17.jpg" width="344" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt18.jpg" width="285" height="59" alt="教室で出合う人たちとの交流から、普段使う筆具まで。どんどん興味のアンテナが広がっています。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴12年</span><span class="fr">Yさん(50代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img18.jpg" width="344" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt19.jpg" width="255" height="37" alt="公文書写に通い始めたのは、たしか88歳の時。毎日、勉強ですね。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴7年</span><span class="fr">Mさん(90代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img19.jpg" width="344" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt20.jpg" width="268" height="42" alt="公文書写を始めて20年、本当に少しずつですが字を書くコツを学んできました。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴21年</span><span class="fr">Rさん(60代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img20.jpg" width="344" height="126" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt11.jpg" width="293" height="60" alt="「所が上手だね。どこで習ってるの？」と聞かれ、ちょっと得意な気持ちになります。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴3年</span><span class="fr">Yさん(30代 会社員)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img11.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt12.jpg" width="293" height="42" alt="「所が上手だね。どこで習ってるの？」と聞かれ、ちょっと得意な気持ちになります。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴2年</span><span class="fr">Kさん(小学3年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img12.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt13.jpg" width="293" height="60" alt="「所が上手だね。どこで習ってるの？」と聞かれ、ちょっと得意な気持ちになります。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴3年</span><span class="fr">Sさん(小学3年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img13.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt14.jpg" width="293" height="60" alt="「所が上手だね。どこで習ってるの？」と聞かれ、ちょっと得意な気持ちになります。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴2年</span><span class="fr">Yさん(60代 主婦)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img14.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt15.jpg" width="293" height="42" alt="「所が上手だね。どこで習ってるの？」と聞かれ、ちょっと得意な気持ちになります。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴1年</span><span class="fr">Kさん(30代 会社員)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img15.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt06.jpg" width="290" height="49" alt="「所が上手だね。どこで習ってるの？」と聞かれ、ちょっと得意な気持ちになります。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴1年</span><span class="fr">Wさん(小学4年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img06.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="hyaku_big clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt07.jpg" width="270" height="49" alt="最近は自分で興味のあることを見つけ、きちんと考えを言うようになりました。" /></p>
+                            <p class="clearfix m_t10"><span class="fl">Tさん親子 書写歴12年(40代主婦)・書写歴8年(小学4年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img07.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt08.jpg" width="295" height="49" alt="野口英世のように人を助ける仕事に就きたい。僕も誰かを救える人になりたいです。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴1年</span><span class="fr">Tさん(小学5年生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img08.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="hyaku_big clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt09.jpg" width="295" height="61" alt="子どもたちから「師匠」と呼ばれています。本当はこちらの方が学ばせてもらっているんです。" /></p>
+                            <p class="clearfix m_t10"><span class="fl">書写歴9年</span><span class="fr">Aさん(70代)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img09.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt10.jpg" width="295" height="49" alt="何でも相談してきた教室の先生は“第2のお母さん”みたいな存在です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴12年</span><span class="fr">Mさん(高校生)</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img10.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt01.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴3年</span><span class="fr">Mさん</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img01.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt02.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴10年</span><span class="fr">Tさん</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img02.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt03.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴3年</span><span class="fr">Iさん</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img03.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt04.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴5年</span><span class="fr">Yさん</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img04.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt05.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴5年</span><span class="fr">Cさん・Tくん親子</span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img05.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                  </ul>
+              </div>
+              <div class="box_book"><a href="./jitsuyo/"><img src="img/home/img_01.jpg" width="685" height="156" alt="くらしに役立つ！ 実用書の 基礎知識" class="transparent" /><span>お手紙のマナー、宛名の書き方、お手紙の基本形式など、<br />
+    お手紙に関する基礎知識を紹介しています。</span></a></div>
+         </div>
+        <div class="box_news">
+            <h2 class="m_b20"><img src="img/home/title_02.jpg" width="125" height="24" alt="お知らせ" /></h2>
+
+            <dl class="news_list">
+                <!--<p class="txt14">誠に恐れ入りますが、8月13日（土）～8月21日（日）は弊社夏期休暇のため、<br>この間のお問い合わせ・資料請求等につきましては、夏期休暇終了後、順次対応<br>させていただきます。あらかじめご了承ください</p>-->
+                <dt>2016.08.22</dt>
+                <dd><a href="./taiken/">「9月の無料体験受付中」</a></dd>
+                <!--<dt>2016.04.19</dt>
+                <dd><a href="./eq-info.html" onclick="m_win(this.href,null,962,602); return false;">平成28年熊本地震について</a></dd>-->
+                <!--<dt>2016.04.13</dt>
+                <dd><a href="./taiken/">「5月の無料体験受付中」</a></dd>-->
+                <dt>2016.04.13</dt>
+                <dd><a href="./classroom">「教室会場提供のお願い」</a><br />空いているお部屋を、公文書写教室としてお貸しいただける方を募集しています。</dd>
+                <dt>2016.03.31</dt>
+                <dd><a href="./enter/nintei.html">「2015年度第2回認定最優秀作」</a><br />全国の学習者から提出された課題の中から、最優秀作をご紹介します。</dd>
+                <dt>2014.12.01</dt>
+                <dd><a href="./search/">「教室見学随時受付中」</a><br />はじめての方でもお気軽にお問い合わせください</dd>
+                <dt>2014.09.01</dt>
+                <dd>公文書写ウェブサイトをデザイン一新、リニューアルいたしました。<br />
+新コーナー<br />
+<a href="./kumon_shosha/">「公文書写とは（スチールムービー）」</a><br />
+<a href="./hyakuhitsu/">「100人100筆（あなたと書写のあるくらし）」</a><br />
+<a href="./album/">「上達アルバム（短期間でこれだけ変わります）」</a><br />
+もぜひご覧ください。</dd>
+                <dt>2014.09.01</dt>
+                <dd><a href="./inst/">「くもん書写教室の先生」にご興味のある方はこちらへ</a><br />万全のサポート体制で、安心して始めていただけます</dd>
+            </dl>
+        </div>
+
+
+        <div class="m_t50">
+            <a href="./classroom/"><img src="./img/home/bnr_school.jpg" alt="教室会場提供のお願い" width="686" height="192" class="transparent" /></a>
+        </div>
+      </div><!-- / id main -->
+
+    <!-- / id sidebar -->
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/sidebar.html"); ?>
+   <!-- / id sidebar -->
+  </div><!-- / id contetns -->
+
+      <!-- / id footer -->
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/footer.html"); ?>
+   <!-- / id footer -->
+
+</div><!-- / id wrapper -->
+<!-- js -->
+<script>
+    function is_sp () {
+        var useragents = [
+            'iPhone',
+            'iPad',
+            'iPod',
+            'Android'
+        ];
+        var pattern = new RegExp(useragents.join('|'), 'i');
+        return pattern.test(navigator.userAgent);
+    }
+    if (is_sp()) {
+        var redirect_flg = true;
+        var arg = new Object;
+        var pair=location.search.substring(1).split('&');
+        for(i=0;pair[i];i++) {
+            var kv = pair[i].split('=');
+            if(kv[0]=="redirect" && kv[1]=="false"){
+                redirect_flg = false;
+            }
+        }
+        if(redirect_flg){
+            location.href = "http://www.kumon.ne.jp/lil/sp/";
+        }else{
+            document.write("<a href=\"sp/\">スマートフォンサイトがオープンしました（一部対応していないページもございます）</a>");
+        }
+    }
+</script>
+<noscript>スマートフォンサイトがオープンしました（一部対応していないページもございます）</noscript>
+<script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript" src="common/js/jquery.bxslider.js"></script>
+<script type="text/javascript">
+$('.bxslider').bxSlider({
+    auto: true,
+    pause: 6000,
+    speed: 1000
+});
+</script>
+<!-- js -->
+</body>
+</html>

@@ -1,0 +1,205 @@
+*.col-l {
+	/* 横幅は適宜指定 */
+	float: left;
+}
+
+*.col-r {
+	/* 横幅は適宜指定 */
+	float: right;
+	margin-top: 15px;
+}
+
+.box p {
+	font-size: 120%;
+	line-height: 180%;
+}
+
+.box li {
+	list-style-type: disc;
+}
+
+.envi{
+	margin-top: 50px;
+}
+
+/*-- TABLE Basic --*/
+table.Basic {
+	border-width: 1px 0 0 1px;
+	border-color: #d9d9d9;
+	border-style: solid;
+}
+
+table.Basic td, #contentMain table.Basic th {
+	border-width: 0 1px 1px 0;
+	border-color: #d9d9d9;
+	border-style: solid;
+	padding: 10px;
+}
+
+table.Basic th {
+	border-color: #BBBBBB;
+	padding: 6px 8px;
+}
+
+/*-- TABLE Basic --*/
+
+#gaiyo table.Basic {
+	margin: 0;
+	padding: 0;
+	border-width: 1px 0 0 1px;
+	border-color: #d9d9d9;
+	border-style: solid;
+	font-size: 120%;
+}
+
+#gaiyo table.Basic td,
+#gaiyo table.Basic th {
+	padding: 5px 10px;
+	text-align: left;
+}
+
+#gaiyo table.Basic th {
+	color: #FFFFFF;
+	background: #6fb4da;
+}
+
+#gaiyo table.Basic td {
+	color: #666666;
+	background: #FFFFFF;
+}
+
+#contentMain h2.title02 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #7DCCF3;
+	margin: 100px 0 30px;
+}
+
+/* gaiyo.html ---------------------------------- */
+
+#gaiyo #contentMain h3 {
+	margin-top: 30px;
+}
+
+#gaiyo #contentMain div.box {
+	margin-top: 15px;
+	padding: 0 5px;
+}
+
+#gaiyo #contentMain div.detail {
+	background: #F9F9F9;
+	margin: 15px 10px 0;
+	padding: 20px;
+}
+
+#gaiyo #contentMain div.box ul {
+	margin: 0;
+	padding: 0 20px;
+}
+
+#gaiyo #contentMain div.box ul li {
+	margin-top: 0.5em;
+	font-size: 120%;
+}
+
+/*-- TABLE Basic --*/
+
+#gaiyo table.Basic {
+	margin: 0;
+	padding: 0;
+	border-width: 1px 0 0 1px;
+	border-color: #d9d9d9;
+	border-style: solid;
+	font-size: 120%;
+}
+
+#gaiyo table.Basic td,
+#gaiyo table.Basic th {
+	padding: 5px 10px;
+	text-align: left;
+}
+
+#gaiyo table.Basic th {
+	color: #FFFFFF;
+	background: #6fb4da;
+}
+
+#gaiyo table.Basic td {
+	color: #666666;
+	background: #FFFFFF;
+}
+
+/*-- TABLE layout --*/
+
+#gaiyo table.layout {
+	margin: 0 10px;
+	padding: 0;
+	border: none;
+	font-size: 120%;
+}
+
+#gaiyo table.layout td,
+#gaiyo table.layout th {
+	padding: 5px 10px;
+	border-bottom: 1px dotted #CCCCCC;
+	text-align: left;
+}
+
+#gaiyo table.layout th {
+	color: #6fb4da;
+}
+
+#gaiyo table.layout td.month {
+	text-align: right;
+}
+
+#gaiyo ul.Number li {
+	list-style-type: decimal;
+}
+
+#gaiyo .intro h3 span {
+	color: #7DCCF3;
+}
+
+#gaiyo .intro .attention {
+	font-size: 12px;
+}
+
+/* prev */
+
+#contentMain div.prev {
+	margin: 20px 0 10px;
+	padding-top: 10px;
+	border-top: 3px solid #D6D6D6;
+}
+
+/* otherNav */
+
+#contentMain div.otherNav {
+	background: #F3F3F3 url(../../common_new/images/bg_other_top.gif) no-repeat;
+	padding-top: 15px;
+}
+
+#contentMain div.otherNav div.inner {
+	background: #F3F3F3 url(../../common_new/images/bg_other_btm.gif) no-repeat 0 100%;
+	padding: 0 10px 30px;
+}
+
+#contentMain div.otherNav ul {
+	margin: -5px 0 0;
+	padding: 0 0 0 14px;
+	list-style: none;
+}
+
+#contentMain div.otherNav ul li {
+	margin: 5px 0 0;
+	text-indent: -14px;
+}
+
+#contentMain div.otherNav ul li a {
+	margin-left: 5px;
+}
+
+#contentMain div.otherNav ul li img {
+	vertical-align: baseline;
+}

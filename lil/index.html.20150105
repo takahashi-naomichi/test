@@ -1,0 +1,229 @@
+<?php
+  $home = true;
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="公文式の考え方を書写の分野に応用した書写教室で、学習者の方により早く、より高い書写力をつけていただくことを目的に、地域の皆さまの書写学習をお手伝いさせていただきたいと考えています。">
+<meta name="keywords" content="公文エルアイエル,公文,公文書写,書写,かきかた,ペン習字,筆ペン,毛筆,くもん,KUMON">
+<title>公文書写 - お子さまから大人の方まで、くもんの書写は、選べる4教科</title>
+<link rel="stylesheet" type="text/css" href="common/css/import.css" media="all" />
+<link rel="stylesheet" type="text/css" href="common/css/jquery.bxslider.css" media="all" />
+</head>
+
+<body>
+<div id="wrapper">
+  <!-- / id header --> 
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/header.html"); ?>
+   <!-- / id header -->
+  
+  <div id="main_top"><div id="slider_top">
+    	<ul class="bxslider">
+    		<li><img src="img/home/slide_newyear2015.png" width="941" height="311" alt="" /></li>
+        	<li><a href="./search/"><img src="img/home/slide-out-07.png" width="941" height="311" alt="" /></a></li>
+        	<li><a href="./kumon_shosha/"><img src="img/home/slide-out-01.png" width="941" height="311" alt="" /></a></li>
+            <!--li><a href="./taiken/"><img src="img/home/slide-out-02m.png" width="941" height="311" alt="" /></a></li-->
+            <li><a href="./hyakuhitsu/"><img src="img/home/slide-out-03.png" width="941" height="311" alt="" /></a></li>
+            <li><a href="./inst/"><img src="img/home/slide-out-04.png" width="941" height="311" alt="" /></a></li>
+            <!--li><a href="./taiken/"><img src="img/home/slide-out-05m.png" width="941" height="311" alt="" /></a></li-->
+            <li><a href="./album/"><img src="img/home/slide-out-06.png" width="941" height="311" alt="" /></a></li>
+        </ul>
+    </div>
+  </div><!-- / id main_top -->
+  
+  <div id="contents" class="clearfix">
+    <div id="main">
+    	<ul class="button_list clearfix">
+        	<li><a href="./enter/enter.html"><img src="img/home/btn-out-01.jpg" width="213" height="158" alt="くもん書写とは" /></a></li>
+            <li><a href="./enter/method.html"><img src="img/home/btn-out-02.jpg" width="213" height="158" alt="学習法3つの特長" /></a></li>
+            <li><a href="./enter/faq_q.html"><img src="img/home/btn-out-03.jpg" width="213" height="158" alt="よくあるご質問" /></a></li>
+        </ul>
+        <div class="block clearfix">
+        	
+        	<div class="block_left heightLine-block">
+        	<a href="./taiken/" class="linkbox">
+            	<div class="block_inner">
+                	<h3 class="sub_title"><img src="img/home/sub_title01.jpg" width="207" height="31" alt="無料体験学習" /></h3>
+                    <p>お近くのくもん書写教室で、<br />
+                    気軽に楽しく書写を体験してみませんか？</p>
+                </div>
+            </a>
+            </div>
+            
+            <div class="block_right heightLine-block">
+            <a href="./album/" class="linkbox">
+            	<div class="block_inner">
+                	<p class="image"><img src="img/home/img_02.png" width="38" height="128" alt="" /></p>
+                	<h3 class="sub_title"><img src="img/home/sub_title02.jpg" width="205" height="30" alt="上達アルバム" /></h3>
+                    <p>どんどん上達しています！<br />
+学習者さまの素晴らしい<br />
+成果をぜひご覧ください。</p>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div>
+        	<h2><img src="img/home/title_01.jpg" width="516" height="31" alt="百人百筆〜私と書写のあるくらし〜" /></h2>
+            <div class="box_slider">
+                <ul class="bxslider">
+                    <li class="clearfix"><a href="./hyakuhitsu/06.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt06.jpg" width="290" height="49" alt="「所が上手だね。どこで習ってるの？」と聞かれ、ちょっと得意な気持ちになります。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴1年</span><span class="fr">Wさん(小学4年生)<br />
+        <a href="./hyakuhitsu/06.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img06.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="hyaku_big clearfix"><a href="./hyakuhitsu/07.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt07.jpg" width="270" height="49" alt="最近は自分で興味のあることを見つけ、きちんと考えを言うようになりました。" /></p>
+                            <p class="clearfix m_t10"><span class="fl">Tさん親子 書写歴12年(40代主婦)・書写歴8年(小学4年生)</span><span class="fr">
+        <a href="./hyakuhitsu/07.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img07.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/08.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt08.jpg" width="295" height="49" alt="野口英世のように人を助ける仕事に就きたい。僕も誰かを救える人になりたいです。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴1年</span><span class="fr">Tさん(小学5年生)<br />
+        <a href="./hyakuhitsu/08.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img08.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="hyaku_big clearfix"><a href="./hyakuhitsu/09.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt09.jpg" width="295" height="61" alt="子どもたちから「師匠」と呼ばれています。本当はこちらの方が学ばせてもらっているんです。" /></p>
+                            <p class="clearfix m_t10"><span class="fl">書写歴9年</span><span class="fr">Aさん(70代)<br />
+        <a href="./hyakuhitsu/09.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img09.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/10.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt10.jpg" width="295" height="49" alt="何でも相談してきた教室の先生は“第2のお母さん”みたいな存在です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴12年</span><span class="fr">Mさん(高校生 女子)<br />
+        <a href="./hyakuhitsu/10.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img10.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/01.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt01.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴3年</span><span class="fr">Mさん<br />
+        <a href="./hyakuhitsu/01.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img01.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/02.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt02.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴10年</span><span class="fr">Tさん<br />
+        <a href="./hyakuhitsu/02.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img02.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/03.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt03.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴3年</span><span class="fr">Iさん<br />
+        <a href="./hyakuhitsu/03.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img03.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/04.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt04.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴5年</span><span class="fr">Yさん<br />
+        <a href="./hyakuhitsu/04.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img04.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                    <li class="clearfix"><a href="./hyakuhitsu/05.html" class="linkbox"></a>
+                        <div class="hyaku_box">
+                            <p><img src="img/home/img_txt05.jpg" width="285" height="49" alt="わたしにとって、書写は大事な時間です。" /></p>
+                            <p class="clearfix m_t15"><span class="fl">書写歴5年</span><span class="fr">Cさん・Tくん親子<br />
+        <a href="./hyakuhitsu/05.html">私の書のあるくらしは&gt;</a></span></p>
+                        </div>
+                        <div class="image"><img src="img/home/main_img05.jpg" width="343" height="126" alt="" /></div>
+                    </li>
+                  </ul>
+              </div>
+              <div class="box_book"><a href="./jitsuyo/"><img src="img/home/img_01.jpg" width="685" height="156" alt="くらしに役立つ！ 実用書の 基礎知識" class="transparent" /><span>お手紙のマナー、宛名の書き方、お手紙の基本形式など、<br />
+    お手紙に関する基礎知識を紹介しています。</span></a></div>
+         </div>
+        <div class="box_news">
+        	<h2><img src="img/home/title_02.jpg" width="125" height="24" alt="お知らせ" /></h2>
+<div class="special_news">【12月27日(土)～1月4日(日)は弊社冬季休暇のため、この間のお問い合わせ・資料請求等につきましては、冬季休暇終了後、順次対応させていただきます。あらかじめご了承ください。】</div>
+            <dl class="news_list">
+            	<dt>2014.12.01</dt>
+                <dd><a href="./search/">「教室見学随時受付中」</a><br />はじめての方でもお気軽にお問い合わせください</dd>
+            	<dt>2014.11.01</dt>
+                <dd><a href="./enter/nintei.html">「2014年度　第一回認定最優秀作」</a><br />全国の学習者から提出された課題の中から、最優秀作をご紹介します。</dd>
+            	<dt>2014.09.01</dt>
+                <dd>公文書写ウェブサイトをデザイン一新、リニューアルいたしました。<br />
+新コーナー<br />
+<a href="./kumon_shosha/">「公文書写とは（スチールムービー）」</a><br />
+<a href="./hyakuhitsu/">「100人100筆（あなたと書写のあるくらし）」</a><br />
+<a href="./album/">「上達アルバム（短期間でこれだけ変わります）」</a><br />
+もぜひご覧ください。</dd>
+            	<dt>2014.09.01</dt>
+                <dd><a href="./inst/">「くもん書写教室の先生」にご興味のある方はこちらへ</a><br />万全のサポート体制で、安心して始めていただけます</dd>
+            </dl>
+        </div>
+  	</div><!-- / id main -->
+    
+    <!-- / id sidebar --> 
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/sidebar.html"); ?>
+   <!-- / id sidebar -->
+  </div><!-- / id contetns -->
+  
+  	<!-- / id footer --> 
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/footer.html"); ?>
+   <!-- / id footer -->
+
+</div><!-- / id wrapper -->
+<!-- js -->
+<script>
+	function is_sp () {
+		var useragents = [
+			'iPhone',
+			'iPad',
+			'iPod',
+			'Android'
+		];
+		var pattern = new RegExp(useragents.join('|'), 'i');
+		return pattern.test(navigator.userAgent);
+	}
+	if (is_sp()) {
+		var redirect_flg = true;
+		var arg = new Object;
+		var pair=location.search.substring(1).split('&');
+		for(i=0;pair[i];i++) {
+			var kv = pair[i].split('=');
+			if(kv[0]=="redirect" && kv[1]=="false"){
+				redirect_flg = false;
+			}
+		}
+		if(redirect_flg){
+			location.href = "http://www.kumon.ne.jp/lil/sp/";
+		}else{
+			document.write("<a href=\"sp/\">スマートフォンサイトがオープンしました（一部対応していないページもございます）</a>");
+		}
+	}
+</script>
+<noscript>スマートフォンサイトがオープンしました（一部対応していないページもございます）</noscript>
+<script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript" src="common/js/jquery.bxslider.js"></script>
+<script type="text/javascript">
+$('.bxslider').bxSlider({
+	auto: true,
+	pause: 6000,
+	speed: 1000
+});
+</script>
+<!-- js -->
+</body>
+</html>

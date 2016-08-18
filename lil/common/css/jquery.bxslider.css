@@ -1,0 +1,145 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.box_slider .bx-wrapper .bx-viewport {
+	background: #f2f4f3;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -15px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.box_slider .bx-wrapper .bx-pager {
+	display: none;
+}
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 00px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #c1c1c1;
+	text-indent: -9999px;
+	display: block;
+	width: 25px;
+	height: 8px;
+	margin: 0 7px;
+	outline: 0;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #7eccf2;
+}
+
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+#main_top .bx-wrapper .bx-prev {
+	left: -20px;
+	background: url(../../img/home/prev-btn01.png) no-repeat 0 0;
+}
+
+#main_top .bx-wrapper .bx-next {
+	right: -20px;
+	background: url(../../img/home/next-btn01.png) no-repeat 0 0;
+}
+
+.box_slider .bx-wrapper .bx-prev {
+	left: 8px;
+	background: url(../../img/home/prev-btn02.png) no-repeat 0 0;
+}
+
+.box_slider .bx-wrapper .bx-next {
+	right: 8px;
+	background: url(../../img/home/next-btn02.png) no-repeat 0 0;
+}
+
+.box_slider .bx-wrapper .bx-controls-direction a {
+	height: 23px;
+	width: 23px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 43px;
+	height: 43px;
+	text-indent: -9999px;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="くもん書写教室ではそれぞれのライフスタイルに合わせて気軽に楽しく書写を学んでいただけます。" />
+<meta name="keywords" content="無料体験学習,体験学習公文エルアイエル,公文,公文書写,書写,かきかた,ペン習字,筆ペン,毛筆,くもん,KUMON," />
+<title>くもん書写の特長 | 公文書写</title>
+<link rel="stylesheet" type="text/css" href="../common/css/import.css" media="all" />
+</head>
+
+<body>
+<div id="wrapper">
+  	<!-- / id header --> 
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/header.html"); ?>
+   <!-- / id header -->
+  
+  <div id="contents" class="clearfix">
+    <div id="main">
+    
+    	<div id="enter">
+        	<h2 id="title_enter"><img src="../img/enter/title_01.gif" /></h2>
+            <p id="text_enter">
+            	くもん書写教室では、お子さんから大人の方まですべての世代のみなさんに、<br />
+                それぞれのライフスタイルに合わせて気軽に楽しく書写を学んでいただけます。<br />
+                楽しんでつづけながら、きちんと上達。<br />
+                くもん書写だけの素敵な魅力をご紹介します。<br />
+            </p>
+            
+            <div id="container_frame_enter">
+            	<div id="frame1" class="frame">
+                	<a href="./outline.html">
+                    	<img src="../img/enter/frame1-out-.png" />
+                    </a>
+                    <p class="text_frame">
+                    	どんなライフスタイルの方にも、<br />
+						気軽に楽しく長く学んでいただける、<br />
+                       くもん書写教室。
+                    </p>
+                </div>
+                <div id="frame2" class="frame">
+                	<a href="./method.html">
+                    	<img src="../img/enter/frame2-out-.png" />
+                    </a>
+                     <p class="text_frame">
+                    	公文式の学習法をベースに、<br />
+						ペースに合わせて確実に上達できる、<br />
+                        くもん書写の学習法をご紹介。
+                    </p>
+                </div>
+                <div id="frame5" class="frame">
+                	<a href="./flow.html">
+                    	<img src="../img/enter/frame5-out-.png" />
+                    </a>
+                     <p class="text_frame">
+                    	くもん書写の教室では、<br />
+						6つのステップで<br />
+                        学習を進めます。
+                    </p>
+                </div>
+                <div id="frame3" class="frame">
+                	<a href="./curriculum.html">
+                    	<img src="../img/enter/frame3-out-.png" />
+                    </a>
+                     <p class="text_frame">
+                    	学習したことを<br />
+                        くらしの中で活かせることを大切に、<br />
+                        実用性を重視した教材です。
+                    </p>
+                </div>
+                <div id="frame4" class="frame">
+                	<a href="./spread.html">
+                    	<img src="../img/enter/frame4-out-.png" />
+                    </a>
+                     <p class="text_frame">
+                    	幼児から90歳代まで、<br />
+                    	世代を越えたたくさんの方々が<br />
+                    	書写のあるくらしを楽しんでいます。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="container_enter_button" class="clearfix">
+            	<a id="button1" href="./enter.html"><img src="../img/enter/btn_01.gif" /></a>
+               	<a id="button2" href="./faq_q.html"><img src="../img/enter/btn_02.gif" /></a>
+            </div>
+            
+        </div>
+        
+  	</div><!-- / id main -->
+    
+    <!-- / id sidebar --> 
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/sidebar.html"); ?>
+   <!-- / id sidebar -->
+  </div><!-- / id contetns -->
+  
+   <!-- / id footer --> 
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/lil/include/footer.html"); ?>
+   <!-- / id footer -->
+</div><!-- / id wrapper -->
+<!-- js -->
+<script type="text/javascript" src="../common/js/common.js"></script>
+<script type="text/javascript">
+	 var arr_loader_img = [
+		'../img/enter/frame1-on-.png',
+		'../img/enter/frame2-on-.png',
+		'../img/enter/frame3-on-.png',
+		'../img/enter/frame4-on-.png',
+		];
+	var arrLoader_length = arr_loader_img.length;
+	var load_image = function(index){
+		var imgObj = new Image();
+		imgObj.src = arr_loader_img[index];
+		imgObj.onload = function() {
+			console.log("aaa");
+		if(index<arrLoader_length)
+			load_image(index+1);
+		}
+	}
+	load_image(0);
+	 
+</script>
+<!-- js -->
+</body>
+</html>
